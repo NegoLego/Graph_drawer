@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Graph drawer</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="app2.js"></script>
+    </head>
+    <body id='body'>
+        <div class="container">
+            <div class="dot"></div>
+            <div class="box">
+                <p>Edges</p>
+                <p class="editable" contenteditable="true" id="userBox">0 1 0 2</p>
+                <p>Up to 10.000</p>
+            </div>
+            <canvas id="myCanvas" width="1000" height="1000"></canvas>
+            <div class="right box">
+                <div>Starting node/ Root node</div>
+                <p class="editable" contenteditable="true" id="startingNode">0</p>
+                <div id="BFS_button" class="clickable">BFS <br> Breadth-first search</div>
+                <div id="tree_button" class="clickable">Make tree</div>
+                <div id="MakePlanar_button" class="clickable">Make planar</div>
+                <div id="Roz" class="clickable">Totu devine roz</div>
+            </div>
+            <div class="dot"></div>
+        </div>
+    </body>
+</html>

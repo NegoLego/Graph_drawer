@@ -1,0 +1,99 @@
+:root{
+    --black: rgba(0, 0, 0, 0.9);
+    --padding: 10px;
+    --spacing: 10px;
+    --margin: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--padding);
+}
+
+h1{
+    margin-bottom: var(--spacing);
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 2 * var(--padding));
+    font-size: large;
+    margin-top: 1vh;
+}
+
+.box, canvas{
+    margin: 0 var(--margin);
+    border-radius: 8px;
+    flex-grow: 1;
+}
+.box{
+    padding: var(--padding);
+    max-width: 15%;
+    border: solid rgba(0, 0, 0, 0.8) 2px;
+    max-height: 400px;
+    overflow-x: hidden;
+}
+.right{
+    overflow-y: auto;
+}
+canvas{
+    display: inline-block;
+    border: solid rgba(0, 0, 0, 0.9) 3px;
+    max-height: 95vh;
+    max-width: 95vh;
+}
+
+h1{
+    font-size: 40px;
+    color: rgb(63, 217, 255);
+    text-align: center;
+    text-shadow:
+    -0.6px -0.6px 0 #000,  
+    0.6px -0.6px 0 #000,
+    0.6px  0.6px 0 #000,
+    -0.6px  0.6px 0 #000;
+}
+
+.dot{
+    height: 0px;
+    width: 0px;
+}
+
+.editable{
+    overflow: auto;
+    max-width: 100%;
+    max-height: 90%;
+    border: solid rgba(0, 0, 0, 0.6) 1px;
+}
+
+.clickable{
+    padding: 5px;
+    margin-top: 10px;
+    width: 100%;
+    height: fit-content;
+    font-size: large;
+    background-color: aqua;
+    text-align: center;
+    border: solid var(--black) 1px;
+    border-radius: 6px;
+    min-width: 4em;
+}
+
+.clickable:hover{
+    filter: brightness(1.1) saturate(0.8);
+    border: solid rgba(0, 0, 0, 0.7) 2px;
+    text-shadow:
+        -0.2px -0.2px 0 rgba(0, 0, 0, 0.5),  
+        0.2px -0.2px 0 rgba(0, 0, 0, 0.5),
+        0.2px  0.2px 0 rgba(0, 0, 0, 0.5),
+        -0.2px  0.2px 0 rgba(0, 0, 0, 0.5);
+}
